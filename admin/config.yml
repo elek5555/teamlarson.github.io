@@ -1,8 +1,7 @@
 backend:
   name: git-gateway
   branch: main
-
-site_url: https://majestic-pothos-e3649b.netlify.app
+  site_url: https://majestic-pothos-e3649b.netlify.app
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
@@ -11,26 +10,18 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
-      - file: "index.html"
-        label: "Home Page"
+      - file: "content/home.md"
+        label: "Home"
         name: "home"
         fields:
-          - {label: "Page Content", name: "body", widget: "markdown"}
-      - file: "about.html"
+          - {label: "Body", name: "body", widget: "markdown"}
+      - file: "content/about.md"
         label: "About"
         name: "about"
         fields:
-          - {label: "Page Content", name: "body", widget: "markdown"}
-      - file: "issues.html"
+          - {label: "Body", name: "body", widget: "markdown"}
+      - file: "content/issues.md"
         label: "Issues"
         name: "issues"
         fields:
-          - {label: "Page Content", name: "body", widget: "markdown"}
-  - name: "blog"
-    label: "Blog"
-    folder: "blog"
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Body", name: "body", widget: "markdown"}
+          - {label: "Body", name: "body", widget: "markdown"}
