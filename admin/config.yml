@@ -1,7 +1,7 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: elek5555/teamlarson.github.io
   branch: main
-  site_url: https://majestic-pothos-e3649b.netlify.app
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
