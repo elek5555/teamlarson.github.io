@@ -3,7 +3,7 @@ backend:
   repo: elek5555/teamlarson.github.io
   branch: main
   auth_type: token
-  token: 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
+  token: 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
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
