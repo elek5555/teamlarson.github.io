@@ -2,34 +2,43 @@ backend:
   name: github
   repo: elek5555/teamlarson.github.io
   branch: main
+  auth_type: token
+  token: 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
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
+
+site_url: https://majestic-pothos-e3649b.netlify.app
 
 collections:
   - name: "pages"
     label: "Pages"
     files:
-      - file: "content/home.md"
-        label: "Home"
+      - label: "Home Page"
         name: "home"
+        file: "index.html"
         fields:
-          - {label: "Body", name: "body", widget: "markdown"}
-      - file: "content/about.md"
-        label: "About"
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+      - label: "About Page"
         name: "about"
+        file: "about.html"
         fields:
-          - {label: "Body", name: "body", widget: "markdown"}
-      - file: "content/issues.md"
-        label: "Issues"
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+      - label: "Issues Page"
         name: "issues"
+        file: "issues.html"
         fields:
-          - {label: "Body", name: "body", widget: "markdown"}
-  - name: "blog"
-    label: "Blog"
-    folder: "blog"
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Body", name: "body", widget: "markdown"}
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+      - label: "Contact Page"
+        name: "contact"
+        file: "contact.html"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+
